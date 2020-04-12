@@ -1,10 +1,12 @@
 package guru.springframework.sfgdi.controllers;
 
 import guru.springframework.sfgdi.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
 /**
  * example of dependency injection via constructor
  */
+@Controller
 public class ConstructorInjectedController {
 
     private final GreetingService greetingService;
