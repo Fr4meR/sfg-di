@@ -17,9 +17,9 @@ public class SfgDiApplication {
 		//get a Controller from the application context and use a method of the controller
 		//notice: there is no explicit new keyword here.. spring framework is managing
 		//the object of MyController
+		System.out.println("------- Primary");
 		MyController myController = (MyController) ctx.getBean("myController");
-		String hello = myController.sayHello();
-		System.out.println(hello);
+		System.out.println(myController.sayHello());
 
 		System.out.println("------- Property");
 		PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
