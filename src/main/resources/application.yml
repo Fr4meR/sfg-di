@@ -3,3 +3,11 @@ guru:
     username: tshess
     password: jmspass
     url: www.jms.example.de
+
+---
+spring:
+  profiles: EN
+
+guru:
+  jms:
+    username: tshess - EN - $$$$
